@@ -1,0 +1,15 @@
+type Query {
+    getConfig(
+        clai_env: String,
+        output: String,
+    ): Config
+
+    healthCheck: Boolean!
+}
+
+
+
+type Config {
+    credentials: Any,
+    endpoints: Any,
+}

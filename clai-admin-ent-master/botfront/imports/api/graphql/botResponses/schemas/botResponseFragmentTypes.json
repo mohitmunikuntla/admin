@@ -1,0 +1,50 @@
+[
+    {
+        "kind": "INTERFACE",
+        "name": "BotResponsePayload",
+        "possibleTypes": [
+            {
+                "name": "TextPayload"
+            },
+            {
+                "name": "QuickRepliesPayload"
+            },
+            {
+                "name": "TextWithButtonsPayload"
+            },
+            {
+                "name": "ImagePayload"
+            },
+            {
+                "name": "VideoPayload"
+            },
+            {
+                "name": "TablePayload"
+            },
+            {
+                "name": "CarouselPayload"
+            },
+            {
+                "name": "CustomPayload"
+            },
+            {
+                "name": "StarRatingPayload"
+            },
+            {
+                "name": "LikeDislikePayload"
+            }
+        ]
+    },
+    {
+        "kind": "INTERFACE",
+        "name": "ButtonPayload",
+        "possibleTypes": [
+            {
+                "name": "PostbackButton"
+            },
+            {
+                "name": "WebUrlButton"
+            }
+        ]
+    }
+]

@@ -1,0 +1,31 @@
+rasa_development:
+  credentials:
+    rasa_addons.core.channels.webchat.WebchatInput:
+      session_persistence: true
+      base_url: http://localhost:8888
+      socketio_path: /development/socket.io/
+      socket_path: /development/socket.io/
+  endpoints:
+    nlg:
+      type: rasa_addons.core.nlg.GraphQLNaturalLanguageGenerator
+      url: http://admin:3000/graphql
+    action_endpoint:
+      url: http://actions:5055/webhook
+    tracker_store:
+      store_type:  rasa_addons.core.tracker_stores.botfront.BotfrontTrackerStore
+      url: http://admin:3000/graphql
+  instances:
+    host: 'http://rasa-development:5005'
+    token: '03001620-00b7-4141-a046-48561d2d48f5'
+    name: 'Default Instance'
+rasa_production:
+  credentials:
+    rasa_addons.core.channels.webchat.WebchatInput:
+      session_persistence: true
+      base_url: http://localhost:8888
+      socketio_path: /development/socket.io/
+      socket_path: /development/socket.io/
+  instances:
+    host: 'http://rasa-development:5005'
+    token: '7b7cbfd9-6e04-4311-9795-9758a150e473'
+    name: 'Default Instance'

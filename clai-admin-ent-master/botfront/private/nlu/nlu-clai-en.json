@@ -1,0 +1,12 @@
+[
+    {
+        "text": "hi",
+        "intent": "smalltalk.greet",
+        "entities": []
+    },
+    {
+        "text": "bye",
+        "intent": "smalltalk.bye",
+        "entities": []
+    }
+]
