@@ -1,7 +1,7 @@
 {
   "name": "clai",
   "version": "1.2.0",
-  "repository": "https://github.com/Pemari-Technology/clai-admin",
+  "repository": "https://github.com/mohitmunikuntla/admin/clai-admin-ent-master",
   "description": "Clai is an open source chatbot platform based on Rasa.",
   "main": "index.js",
   "scripts": {
